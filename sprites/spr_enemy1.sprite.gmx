@@ -14,5 +14,7 @@
   <VTile>0</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
+  <width>32</width>
+  <height>32</height>
   <frames/>
 </sprite>
