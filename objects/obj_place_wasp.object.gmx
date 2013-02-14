@@ -25,64 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//timer=0
-//rantime=random(5)
-placed=0
-create=0
-make=0
-if room=LvL0 then {create=obj_place_mu; make=20*global.hardness}
-if room=LvL1 then {create=obj_place_lamda; make=20*global.hardness}
-if room=LvL2 then {create=obj_place_wasp;made=30*global.hardness}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Simple how to Use :p</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
-placed=0
-create=0
-make=0
-
-if room=[room name] then create=[enemy name]; make=[ammount*]/global.hardness
-
-
-* Amount of enemy's to spawn
+            <string>create=obj_enemy_wasp
+time=0
+rantime=random(5)
 </string>
           </argument>
         </arguments>
@@ -105,8 +50,8 @@ if room=[room name] then create=[enemy name]; make=[ammount*]/global.hardness
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if placed&lt;=make then instance_create(x,y,create); placed+=1
-if placed&gt;make then instance_destroy()
+            <string>if time &gt; rantime then {instance_create((room_width+5),(random(room_height)),create); instance_destroy()}
+time+=(1/room_speed)
 </string>
           </argument>
         </arguments>

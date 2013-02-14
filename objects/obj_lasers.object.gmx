@@ -25,16 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed=10+(0.3*global.bulletspeed)
+            <string>fhspeed=10+(0.3*global.bulletspeed)
 hp=2;
  allowspeedup=0
 if global.weapon_tier=3 then allowspeedup=1
+if global.weapon_tier=4 then allowspeedup=2
 spriteindex=0
 hpallow=0
 spriteindex=global.weapon_tier
 if global.weapon_tier=1 then {speed=7+(0.3*global.bulletspeed);if global.penergy&lt;3 then instance_destroy()}
 if global.weapon_tier=2 then {speed=7+(0.3*global.bulletspeed);if global.penergy&lt;5 then instance_destroy()}
 if global.weapon_tier=3 then {speed=3;if global.penergy&lt;8 then instance_destroy()}
+if global.weapon_tier=4 then {speed=3;if global.penergy&lt;8 then instance_destroy()}
+
 
 //if global.weapon_tier=1 then 
 // global.laserspread
@@ -61,6 +64,7 @@ if global.weapon_tier=3 then {speed=3;if global.penergy&lt;8 then instance_destr
           <argument>
             <kind>1</kind>
             <string>if allowspeedup=1 then{if speed&lt;10+(0.3*global.bulletspeed) then speed+=0.3}
+if allowspeedup=2 then{if speed&lt;14+(0.3*global.bulletspeed) then speed+=0.3}
 if hpallow=1 then {if hp&lt;0 then instance_destroy()}
 image_angle=direction;
 </string>
@@ -88,7 +92,10 @@ image_angle=direction;
             <string>if hpallow=0 then instance_destroy()
 if hpallow=1 then hp-=1
 //effect_create_above(ef_spark,x,y,1,c_white)
-scr_Particel_effects(1141,0,0)
+if global.weapon_tier=1 then scr_Particel_effects(1241,0,0)
+if global.weapon_tier=2 then scr_Particel_effects(1231,0,0)
+if global.weapon_tier=3 then scr_Particel_effects(1251,0,0)
+if global.weapon_tier=4 then scr_Particel_effects(1261,0,0)
 </string>
           </argument>
         </arguments>
@@ -130,6 +137,7 @@ scr_Particel_effects(1141,0,0)
             <string>if spriteindex=1 then draw_sprite(sprite_index,0,x,y)
 if spriteindex=2 then draw_sprite(sprite_index,1,x,y)
 if spriteindex=3 then draw_sprite(sprite_index,2,x,y)
+if spriteindex=4 then draw_sprite(sprite_index,3,x,y)
 image_speed=0
 </string>
           </argument>

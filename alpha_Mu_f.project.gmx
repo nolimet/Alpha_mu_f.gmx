@@ -126,11 +126,13 @@
         </objects>
         <object>objects\obj_enemy_mu</object>
         <object>objects\obj_enemy_lambda</object>
+        <object>objects\obj_enemy_wasp</object>
         <object>objects\obj_enemy_spawner</object>
       </objects>
       <objects name="Place enemy">
         <object>objects\obj_place_mu</object>
         <object>objects\obj_place_lamda</object>
+        <object>objects\obj_place_wasp</object>
         <object>objects\obj_place_enemy</object>
       </objects>
       <objects name="Drop">
@@ -183,7 +185,7 @@
         </objects>
         <objects name="Draws">
           <object>objects\obj_draw_exp</object>
-          <object>objects\obj_upgrade_weapon_tier</object>
+          <object>objects\obj_upgrade_llaser_tier</object>
           <object>objects\obj_upgrade_firerate</object>
           <object>objects\obj_unlock_scater</object>
           <object>objects\obj_upgrade_Scater_tier</object>
@@ -227,6 +229,7 @@
       <rooms name="levels">
         <room>rooms\LvL0</room>
         <room>rooms\LvL1</room>
+        <room>rooms\LvL2</room>
         <room>rooms\TestRoom</room>
       </rooms>
       <room>rooms\lvl_select_ab</room>

@@ -72,10 +72,10 @@ dmg=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.scatlastier=1 then ehp-=0.3/(armor*global.hardness)
-if global.scatlastier=2 then ehp-=0.6/(armor*global.hardness)
-if global.scatlastier=3 then ehp-=0.8/(armor*global.hardness)
-if global.scatlastier=4 then ehp-=1/(armor*global.hardness)
+            <string>if global.scatlastier=1 then ehp-=0.3/armor
+if global.scatlastier=2 then ehp-=0.6/armor
+if global.scatlastier=3 then ehp-=0.8/armor
+if global.scatlastier=4 then ehp-=1/armor
 </string>
           </argument>
         </arguments>
@@ -98,10 +98,10 @@ if global.scatlastier=4 then ehp-=1/(armor*global.hardness)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.weapon_tier=1 then ehp-=0.3/(armor*global.hardness)
-if global.weapon_tier=2 then ehp-=0.6/(armor*global.hardness)
-if global.weapon_tier=3 then ehp-=0.8/(armor*global.hardness)
-if global.weapon_tier=4 then ehp-=1/(armor*global.hardness)
+            <string>if global.weapon_tier=1 then ehp-=0.3/armor
+if global.weapon_tier=2 then ehp-=0.6/armor
+if global.weapon_tier=3 then ehp-=0.8/armor
+if global.weapon_tier=4 then ehp-=1/armor
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ehpmax=1
+            <string>ehpmax=0.5*global.hardness
 armor=1
 espeed=6
 expe=1

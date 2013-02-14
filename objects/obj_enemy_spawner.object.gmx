@@ -77,6 +77,7 @@ maxenemys=0 //used for max enemys that can be spawned
             <kind>1</kind>
             <string>create[0]=obj_place_mu
 create[1]=obj_place_lamda
+create[2]=obj_place_wasp
 </string>
           </argument>
         </arguments>
@@ -163,8 +164,8 @@ if global.Espawncons=3 then {instance_create((roomx1+4),random(roomy1),create[2]
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room=LvL0 then{maxenemys=10;if enemys&lt;maxenemys then {if tick&gt;=10 then instance_create((roomx1),random(roomy1),create[1]);enemys+=1;tick=0}};
-if tick&lt;tickm then tick+=1;
+            <string>//if room=LvL0 then{maxenemys=10;if enemys&lt;maxenemys then {if tick&gt;=10 then instance_create((roomx1),random(roomy1),create[1]);enemys+=1;tick=0}};
+//if tick&lt;tickm then tick+=1;
 </string>
           </argument>
         </arguments>

@@ -44,8 +44,9 @@ tick=0
 global.scatcantfire=0
 canfireZpm=600
 canfireZp=canfireZpm
-image_speed=0
-image_index=0
+//image_speed=0
+//image_index=0
+commandcooldown=0
 </string>
           </argument>
         </arguments>
@@ -134,9 +135,9 @@ gstr=get_string("command?","");
 if gstr="tier 1" then global.weapon_tier=1
 if gstr="tier 2" then global.weapon_tier=2
 if gstr="tier 3" then global.weapon_tier=3
-if gstr="hard" then global.hardness=0.5
+if gstr="hard" then global.hardness=2
 if gstr="normal" then global.hardness=1
-if gstr="easy" then global.hardness=2
+if gstr="easy" then global.hardness=0.5
 if gstr="exp" then global.expg+=100
 if gstr="scater" then global.scatlas=1
 if gstr="granade"then global.weapon_granade=1
@@ -176,51 +177,11 @@ if gstr="exps" then global.expg+=1000
 if create=1 then {create=0; cstr=get_string("Enemy name","")}
 if cstr="1"  then {global.Espawncons=1}
 if cstr="2"    then {global.Espawncons=2}
-
+if cstr="3"    then {global.Espawncons=3}
 
 }
 
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_Particel_effects</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0001</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-40</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -332,6 +293,8 @@ draw_text(1,1,'Exp points'+string(global.expg)+'#'+'Time survived'+string(timer)
 draw_healthbar(x-10,y+40,x+10,y+36,global.penergy,c_black,c_navy,c_aqua,0,true,false) //energy bar code same as healthbar code
 draw_sprite(sprite_index,-1,x,y)
 //image_speed=0
+//drawparitcels
+scr_Particel_effects(0001,-40,0)
 </string>
           </argument>
         </arguments>
