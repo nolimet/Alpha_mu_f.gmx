@@ -204,7 +204,7 @@ if cstr="2"    then {global.Espawncons=2}
           </argument>
           <argument>
             <kind>0</kind>
-            <string>7231</string>
+            <string>0001</string>
           </argument>
           <argument>
             <kind>0</kind>

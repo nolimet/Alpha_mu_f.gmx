@@ -5,7 +5,12 @@ More enemys
 Better Sprites
 Bosses
 LvL system
-shields but they will kost you energy
+shields but they will cost you energy wen they are up
+Upgrades
+	Energygenup
+	shieldupgrade
+	Balanced prices
+	Hpupgrades
 Platform Gameplay
 	physics
 	enemys

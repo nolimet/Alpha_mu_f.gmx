@@ -61,6 +61,9 @@
       <sprite>sprites\spr_breakblock</sprite>
       <sprite>sprites\spr_minigame</sprite>
     </sprites>
+    <sprites name="StartScreen">
+      <sprite>sprites\spr_alpha</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Moon</background>
@@ -80,8 +83,8 @@
     <script>scripts\scr_Particel_effects.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\WhiteText</font>
     <font>fonts\fon_levels</font>
+    <font>fonts\WhiteText</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_globar_Var</object>
