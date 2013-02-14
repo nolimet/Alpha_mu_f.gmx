@@ -37,6 +37,7 @@ if global.weapon_tier=2 then {speed=7+(0.3*global.bulletspeed);if global.penergy
 if global.weapon_tier=3 then {speed=3;if global.penergy&lt;8 then instance_destroy()}
 
 //if global.weapon_tier=1 then 
+// global.laserspread
 </string>
           </argument>
         </arguments>

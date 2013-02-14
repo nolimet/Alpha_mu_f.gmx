@@ -54,7 +54,7 @@ global.php=0 //player hp
 global.maxphp=10 //default max player hp
 global.parmor=1 //player armor
 global.firerate=1 //rate of bullet
-global.bulletspeed=1 //speed of bullets
+global.bulletspeed=5 //speed of bullets
 global.weapon_tier=1   //level of weapons you can use bij default
 timer=0
 drawhp=0
@@ -67,7 +67,7 @@ global.scatlastier=1 //scaterlaser tier
 global.weapon_granade=0 //For grandes frag only now
 global.Espawncons=0 //used for enemy spawn console
 global.a_zeropoint=0 //enables Zeropoint in above
-
+global.laserspread=0 //this will enable bullet spread
 </string>
           </argument>
         </arguments>
