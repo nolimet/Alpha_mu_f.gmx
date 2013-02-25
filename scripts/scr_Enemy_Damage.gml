@@ -1,1 +1,1 @@
-ehp-=ehp-(armor*global.hardness)
+ehp-=1/armor

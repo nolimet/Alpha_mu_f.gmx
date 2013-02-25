@@ -61,9 +61,6 @@
       <sprite>sprites\spr_breakblock</sprite>
       <sprite>sprites\spr_minigame</sprite>
     </sprites>
-    <sprites name="StartScreen">
-      <sprite>sprites\spr_alpha</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Moon</background>

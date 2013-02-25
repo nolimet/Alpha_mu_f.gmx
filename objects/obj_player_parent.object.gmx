@@ -135,6 +135,7 @@ gstr=get_string("command?","");
 if gstr="tier 1" then global.weapon_tier=1
 if gstr="tier 2" then global.weapon_tier=2
 if gstr="tier 3" then global.weapon_tier=3
+if gstr="tier 4" then global.weapon_tier=4
 if gstr="hard" then global.hardness=2
 if gstr="normal" then global.hardness=1
 if gstr="easy" then global.hardness=0.5
@@ -151,6 +152,7 @@ if gstr="zeropoint" then global.a_zeropoint=1
 if gstr="E0" then global.penergy=0
 if gstr="heal" then global.php=global.maxphp
 if gstr="exps" then global.expg+=1000
+if gstr="unlockall" then{global.weapon_tier=4; global.scaterlastier=4; global.a_zeropoint=1; global.scatlas=1; global.weapon_granade=1}
 }
 
 </string>
