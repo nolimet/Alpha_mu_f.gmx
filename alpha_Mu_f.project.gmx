@@ -16,6 +16,7 @@
     <sprites name="Player">
       <sprite>sprites\spr_player_tier1_alt</sprite>
       <sprite>sprites\spr_player_tier_1</sprite>
+      <sprite>sprites\spr_NEW_exp_player_tiers_Prone_To_Change</sprite>
       <sprites name="Weapons'">
         <sprite>sprites\spr_laser_red</sprite>
         <sprite>sprites\spr_lasers</sprite>

@@ -63,6 +63,7 @@
   <option_fullscreen>False</option_fullscreen>
   <option_gameguid>{E78637F0-ECA2-40DE-AEBB-E12F8E2DB3DD}</option_gameguid>
   <option_gameid>213615139</option_gameid>
+  <option_haptic_effects>false</option_haptic_effects>
   <option_hasloadimage>false</option_hasloadimage>
   <option_helpkey>true</option_helpkey>
   <option_html5_CreationEventOrder>true</option_html5_CreationEventOrder>
