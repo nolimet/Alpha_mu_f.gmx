@@ -11,5 +11,7 @@
   <VTile>-1</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
+  <width>192</width>
+  <height>50</height>
   <data>images\bg_Moon.png</data>
 </background>
