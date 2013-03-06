@@ -28,7 +28,6 @@
         <sprite>sprites\spr_fragment_granade_frag</sprite>
         <sprite>sprites\spr_lasers_v2</sprite>
         <sprite>sprites\spr_NEW_SPRITES_lasers</sprite>
-        <sprite>sprites\spr_NEW_SPRITES_raptorjetpack</sprite>
         <sprite>sprites\spr_zero_point_s</sprite>
         <sprite>sprites\spr_zero_point</sprite>
       </sprites>
@@ -41,6 +40,7 @@
       <sprite>sprites\spr_enemy_cannon</sprite>
       <sprite>sprites\spr_enemy_wasp</sprite>
       <sprite>sprites\spr_what</sprite>
+      <sprite>sprites\spr_NEW_SPRITES_raptorjetpack</sprite>
     </sprites>
     <sprites name="buttons">
       <sprite>sprites\spr_Play</sprite>
