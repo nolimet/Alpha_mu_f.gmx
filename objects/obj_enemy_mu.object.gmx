@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>ehpmax=0.5*global.hardness
 armor=1
-espeed=6
+espeed=4+random(4)
 expe=1
 scorep=1
 ehp=ehpmax
