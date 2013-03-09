@@ -1,1 +1,1 @@
-ord("A")
+keys = ord("A")

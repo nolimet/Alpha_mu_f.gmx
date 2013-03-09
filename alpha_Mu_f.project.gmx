@@ -210,6 +210,7 @@
       </objects>
       <object>objects\obj_test_jumper</object>
     </objects>
+    <object>objects\obj_EXP_effect_1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Instalation_room</room>
