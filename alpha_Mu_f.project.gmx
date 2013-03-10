@@ -62,6 +62,7 @@
       <sprite>sprites\spr_breakblock</sprite>
       <sprite>sprites\spr_minigame</sprite>
     </sprites>
+    <sprite>sprites\spr_NEW_scatterLaser</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Moon</background>
