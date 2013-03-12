@@ -64,7 +64,7 @@ stretch = 1
 if global.scatlastier=3 then {if speed&lt;10+(0.3*global.bulletspeed) then speed+=0.2+(0.05*global.bulletspeed)}
 if global.scatlastier=4 then {if speed&lt;13+(0.3*global.bulletspeed) then speed+=0.2+(0.05*global.bulletspeed)}
 
-stretch += 0.02
+if (stretch &lt;= 3){stretch += 0.02}
 </string>
           </argument>
         </arguments>
