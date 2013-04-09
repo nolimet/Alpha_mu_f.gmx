@@ -185,10 +185,12 @@
         <objects name="Draws">
           <object>objects\obj_draw_exp</object>
           <object>objects\obj_upgrade_llaser_tier</object>
+          <object>objects\obj_hull_tier</object>
           <object>objects\obj_upgrade_firerate</object>
           <object>objects\obj_unlock_scater</object>
           <object>objects\obj_upgrade_Scater_tier</object>
           <object>objects\obj_unlock_Zeropoint</object>
+          <object>objects\obj_capacitor_upgrade</object>
           <object>objects\obj_draw_firerate</object>
         </objects>
       </objects>

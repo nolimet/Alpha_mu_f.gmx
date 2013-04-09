@@ -1,1 +1,1 @@
-ehp-=1/armor
+//ehp-=1/armor

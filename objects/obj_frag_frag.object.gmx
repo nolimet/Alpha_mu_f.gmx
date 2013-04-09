@@ -28,7 +28,7 @@
             <string>ticks=0
 ticksm=20
 speed=6
-direction=(random(270)-90)
+direction=(random(360))
 </string>
           </argument>
         </arguments>
@@ -52,6 +52,7 @@ direction=(random(270)-90)
           <argument>
             <kind>1</kind>
             <string>if ticks&gt;ticksm then instance_destroy()
+speed+=0.3
 ticks+=1
 </string>
           </argument>

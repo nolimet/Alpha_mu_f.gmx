@@ -82,6 +82,7 @@ if keyboard_check(ord('Z'))=1 then {if global.a_zeropoint_alive=0 then {if globa
 
 //Draw updates
 drawhp=((100/global.maxphp)*global.php)
+drawenergy=(100/global.mpenergy)*global.penergy
 if global.php&lt;0.1 then room_goto(mainmenu)
 
 //FireDelay
@@ -292,7 +293,7 @@ draw_text(1,1,'Exp points'+string(global.expg)+'#'+'Time survived'+string(timer)
           <argument>
             <kind>1</kind>
             <string>//draw energybar
-draw_healthbar(x-10,y+40,x+10,y+36,global.penergy,c_black,c_navy,c_aqua,0,true,false) //energy bar code same as healthbar code
+draw_healthbar(x-10,y+40,x+10,y+36,drawenergy,c_black,c_navy,c_aqua,0,true,false) //energy bar code same as healthbar code
 draw_sprite(sprite_index,-1,x,y)
 //image_speed=0
 //drawparitcels
