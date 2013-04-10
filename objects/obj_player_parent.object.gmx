@@ -294,7 +294,8 @@ draw_text(1,1,'Exp points'+string(global.expg)+'#'+'Time survived'+string(timer)
             <kind>1</kind>
             <string>//draw energybar
 draw_healthbar(x-10,y+40,x+10,y+36,drawenergy,c_black,c_navy,c_aqua,0,true,false) //energy bar code same as healthbar code
-draw_sprite(sprite_index,-1,x,y)
+draw_sprite(sprite_index,global.hull_tier,x,y)
+image_speed = 0;
 //image_speed=0
 //drawparitcels
 scr_Particel_effects(0001,-40,0)
