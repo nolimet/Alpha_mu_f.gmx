@@ -48,7 +48,7 @@
             <string>global.player_tier=1 //tier of player
 global.player_lvl=1 //shows playerlvl and used for maxhp calculation
 global.hardness=1//enemy hardness 1=default
-global.expg=900000 //exp for player leveling
+global.expg=0 //exp for player leveling
 global.upgradepoints=0 //points for upgrading weapons and player stats
 global.php=0 //player hp
 global.maxphp=10 //default max player hp
