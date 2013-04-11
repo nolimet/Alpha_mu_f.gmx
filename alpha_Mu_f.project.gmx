@@ -17,6 +17,7 @@
       <sprite>sprites\spr_player_tier1_alt</sprite>
       <sprite>sprites\spr_player_tier_1</sprite>
       <sprite>sprites\spr_NEW_exp_player_tiers_Prone_To_Change</sprite>
+      <sprite>sprites\spr_player_shield</sprite>
       <sprites name="Weapons'">
         <sprite>sprites\spr_laser_red</sprite>
         <sprite>sprites\spr_lasers</sprite>
@@ -41,7 +42,7 @@
       <sprite>sprites\spr_enemy_cannon</sprite>
       <sprite>sprites\spr_enemy_wasp</sprite>
       <sprite>sprites\spr_what</sprite>
-      <sprite>sprites\spr_NEW_SPRITES_raptorjetpack</sprite>
+      <sprite>sprites\spr_raptorjetpack</sprite>
     </sprites>
     <sprites name="buttons">
       <sprite>sprites\spr_Play</sprite>
