@@ -114,6 +114,7 @@
           <object>objects\obj_weapon_beam</object>
         </objects>
         <object>objects\obj_player_tier1</object>
+        <object>objects\obj_shield</object>
       </objects>
       <objects name="enemys">
         <objects name="Test">

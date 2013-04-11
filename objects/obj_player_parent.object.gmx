@@ -298,7 +298,7 @@ draw_sprite(sprite_index,global.hull_tier,x,y)
 image_speed = 0;
 //image_speed=0
 //drawparitcels
-scr_Particel_effects(0001,-40,0)
+scr_Particel_effects(0001,-60,0)
 </string>
           </argument>
         </arguments>

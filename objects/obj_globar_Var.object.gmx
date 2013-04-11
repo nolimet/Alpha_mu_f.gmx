@@ -112,6 +112,7 @@ global.laserspread=0 //this will enable bullet spread
             <string>global.scatcantfire=0
 global.partsZeroPoint=0
 global.a_zeropoint_alive=0
+global.shield_alive=0
 </string>
           </argument>
         </arguments>

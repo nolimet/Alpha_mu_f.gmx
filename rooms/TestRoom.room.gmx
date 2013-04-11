@@ -53,7 +53,8 @@
     <instance objName="obj_player_tier1" x="160" y="320" name="inst_6B3D122C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ranValue_gen" x="192" y="128" name="inst_DBA26134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_test_enemy" x="896" y="384" name="inst_913D589E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_partical_test" x="768" y="256" name="inst_4155F343" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_partical_test" x="448" y="352" name="inst_85EA685A" locked="0" code="" scaleX="0" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_partical_test" x="480" y="288" name="inst_CDBFE2E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
