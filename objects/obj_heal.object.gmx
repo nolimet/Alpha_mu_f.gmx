@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.php &lt; global.maxphp then global.php+=10
+            <string>if global.php &lt; global.maxphp then global.php+=(global.maxphp/100*25)
 if global.php &gt; global.maxphp then global.php=global.maxphp
 </string>
           </argument>
