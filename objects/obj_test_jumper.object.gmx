@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>jumpchecker=0
-maxjumpchecker=2
+            <string>rockets = 30;
+groundmax = 200;
+airmax = 2000;
 </string>
           </argument>
         </arguments>
@@ -49,12 +50,31 @@ maxjumpchecker=2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>phy_fixed_rotation = true
-if keyboard_check(vk_left) physics_apply_force(x,y,-100,0)
-if keyboard_check(vk_right) physics_apply_force(x,y,100,0)
-if keyboard_check(vk_right) and collision_rectangle(x-17,y-17,x+17,y+17,obj_static_parent,true,false) physics_apply_force(x,y,100,0)
-if jumpchecker&lt;maxjumpchecker if keyboard_check(vk_space) {physics_apply_force(x,y,0,-300);jumpchecker+=1}
-if keyboard_check(vk_space)=0 then jumpchecker=0
+            <string>phy_fixed_rotation = true;
+if keyboard_check(ord("A")) and phy_linear_velocity_x &gt; -groundmax and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false) physics_apply_force (x,y,-100,0);
+if keyboard_check(ord("D")) and phy_linear_velocity_x &lt; groundmax and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false) physics_apply_force(x,y,100,0);
+
+if keyboard_check(ord("A")) and phy_linear_velocity_x &gt; -airmax and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false) physics_apply_force (x,y,-10,0);
+if keyboard_check(ord("D")) and phy_linear_velocity_x &lt; airmax and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false) physics_apply_force(x,y,10,0);
+
+if keyboard_check_pressed(vk_space) and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false){
+    physics_apply_force(x,y,0,-2000);
+    rockets = 5;
+};
+if keyboard_check(vk_space) and !collision_rectangle(x-15,y,x+14,y,obj_static_parent,false,false) and rockets &gt; 0{
+    physics_apply_force(x,y,0,-500);
+    rockets -= 1;
+};
+if !keyboard_check(vk_space) and !collision_rectangle(x-15,y,x+14,y,obj_static_parent,false,false) and rockets &gt; 0{
+    phy_linear_velocity_y += 0.1
+};
+if keyboard_check_released(vk_space) and !collision_rectangle(x-15,y,x+14,y,obj_static_parent,false,false) rockets = 0;
+if !keyboard_check(ord("A")) and phy_linear_velocity_x &lt; 0.1 and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false) {phy_linear_velocity_x += 10};
+if !keyboard_check(ord("D")) and phy_linear_velocity_x &gt; 0.1 and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false) {phy_linear_velocity_x -= 10};
+if !keyboard_check(ord("A")) and !keyboard_check(ord("D")) and collision_rectangle(x-15,y,x+14,y+3,obj_static_parent,false,false){
+    if phy_linear_velocity_x &lt; 9 and phy_linear_velocity_x &gt; 0 phy_linear_velocity_x = 0;
+    if phy_linear_velocity_x &gt; -9 and phy_linear_velocity_x &lt; 0 phy_linear_velocity_x = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -65,7 +85,7 @@ if keyboard_check(vk_space)=0 then jumpchecker=0
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>2</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
-  <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
+  <PhysicsObjectRestitution>0</PhysicsObjectRestitution>
   <PhysicsObjectGroup>1</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
