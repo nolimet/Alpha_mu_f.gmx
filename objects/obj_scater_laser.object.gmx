@@ -30,10 +30,10 @@ hp=2
 sprite=0
 if global.scatcantfire=1 then instance_destroy()
 if global.scatcantfire=0 then {if global.scatlastier=0 then instance_destroy()}
-if global.scatcantfire=0 then{if global.scatlastier=1 then {speed=5+(0.3*global.bulletspeed); sprite=1; if global.penergy&lt;5 then instance_destroy();if global.penergy&gt;8 then global.penergy-=5}}
-if global.scatcantfire=0 then{if global.scatlastier=2 then {speed=6+(0.3*global.bulletspeed); sprite=2; if global.penergy&lt;4 then instance_destroy();if global.penergy&gt;5 then global.penergy-=4}}
-if global.scatcantfire=0 then{if global.scatlastier=3 then {speed=2; sprite=3; if global.penergy&lt;3 then instance_destroy();if global.penergy&gt;3 then global.penergy-=3}}
-if global.scatcantfire=0 then{if global.scatlastier=4 then {speed=2; sprite=4; if global.penergy&lt;2 then instance_destroy();if global.penergy&gt;3 then global.penergy-=2.8}}
+if global.scatcantfire=0 then{if global.scatlastier=1 then {speed=14+(0.3*global.bulletspeed); sprite=1; if global.penergy&lt;5 then instance_destroy();if global.penergy&gt;8 then global.penergy-=5}}
+if global.scatcantfire=0 then{if global.scatlastier=2 then {speed=18+(0.3*global.bulletspeed); sprite=2; if global.penergy&lt;4 then instance_destroy();if global.penergy&gt;5 then global.penergy-=4}}
+if global.scatcantfire=0 then{if global.scatlastier=3 then {speed=6; sprite=3; if global.penergy&lt;3 then instance_destroy();if global.penergy&gt;3 then global.penergy-=3}}
+if global.scatcantfire=0 then{if global.scatlastier=4 then {speed=8; sprite=4; if global.penergy&lt;2 then instance_destroy();if global.penergy&gt;3 then global.penergy-=2.8}}
 
 direction = -20+random(40)
 stretch = 1
@@ -61,8 +61,8 @@ stretch = 1
           <argument>
             <kind>1</kind>
             <string>
-if global.scatlastier=3 then {if speed&lt;10+(0.3*global.bulletspeed) then speed+=0.2+(0.05*global.bulletspeed)}
-if global.scatlastier=4 then {if speed&lt;13+(0.3*global.bulletspeed) then speed+=0.2+(0.05*global.bulletspeed)}
+if global.scatlastier=3 then {if speed&lt;20+(0.5*global.bulletspeed) then speed+=0.5+(0.05*global.bulletspeed)}
+if global.scatlastier=4 then {if speed&lt;24+(0.5*global.bulletspeed) then speed+=0.5+(0.05*global.bulletspeed)}
 
 if (stretch &lt;= 3){stretch += 0.02}
 </string>

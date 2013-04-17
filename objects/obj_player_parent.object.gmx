@@ -141,6 +141,8 @@ if gstr="hard" then global.hardness=2
 if gstr="normal" then global.hardness=1
 if gstr="easy" then global.hardness=0.5
 if gstr="exp" then global.expg+=100
+if gstr="exp+" then global.expg+=1000
+if gstr="exp++" then global.expg+=10000
 if gstr="scater" then global.scatlas=1
 if gstr="granade"then global.weapon_granade=1
 if gstr="spawn" then create=1
