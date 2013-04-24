@@ -37,12 +37,21 @@
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_mu_old</sprite>
       <sprite>sprites\spr_enemy_mu</sprite>
+      <sprite>sprites\spr_enemy_muon</sprite>
       <sprite>sprites\spr_enemy_lambda</sprite>
       <sprite>sprites\spr_enemy_transport</sprite>
       <sprite>sprites\spr_enemy_cannon</sprite>
       <sprite>sprites\spr_enemy_wasp</sprite>
       <sprite>sprites\spr_what</sprite>
       <sprite>sprites\spr_raptorjetpack</sprite>
+      <sprites name="Boss level 3">
+        <sprite>sprites\spr_boss1_body</sprite>
+        <sprite>sprites\spr_boss1_arm1</sprite>
+        <sprite>sprites\spr_boss1_arm2</sprite>
+        <sprite>sprites\spr_boss1_gun1</sprite>
+        <sprite>sprites\spr_boss1_gun2</sprite>
+        <sprite>sprites\spr_editsprite_DELETE_THIS</sprite>
+      </sprites>
     </sprites>
     <sprites name="buttons">
       <sprite>sprites\spr_Play</sprite>
