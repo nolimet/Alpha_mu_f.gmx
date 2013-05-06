@@ -100,7 +100,7 @@ if keyboard_check(vk_escape)=1 then room_goto(mainmenu)
 //tikker
 if tick&lt;tickm then tick+=1;
 if tick&gt;=tickm then tick=0
-//timer+=(1/room_speed)
+timer+=(1/room_speed)
 //regenaration
 if global.penergy&lt;global.mpenergy then {global.penergy += (global.rechargepenergy*.7)}
 //if global.penergy&lt;global.mpenergy then {global.penergy += (global.rechargepenergy*.9)}
@@ -273,7 +273,7 @@ if cstr="3"    then {global.Espawncons=3}
             <kind>1</kind>
             <string>draw_set_font(WhiteText)
 draw_set_color($ffffff)
-draw_text(1,1,'Exp points'+string(global.expg)+'#'+'Time survived'+string(timer)+'#'+'ticks:'+string(tick))
+draw_text(1,1,'Exp points: '+string(global.expg)+'#'+'Time survived: '+string(timer)+'#'+'ticks: '+string(tick))
 </string>
           </argument>
         </arguments>

@@ -53,7 +53,7 @@ costup3=300
             <kind>1</kind>
             <string>if global.weapon_tier=1 then cost=costup1
 if global.weapon_tier=2 then cost=costup2
-if global.weapon_tier=2 then cost=costup3
+if global.weapon_tier=3 then cost=costup3
 if global.weapon_tier=4 then cost="Maxed"
 </string>
           </argument>

@@ -59,8 +59,8 @@ val=global.mpenergy
             <string>if val==100 then cost=costup1
 if val==200 then cost=costup2
 if val==350 then cost=costup3
-if val==500 then cost=costup4
-if val==750 then cost="Maxed"
+if val==550 then cost=costup4
+if val==800 then cost="Maxed"
 global.mpenergy=val
 </string>
           </argument>
@@ -85,10 +85,10 @@ global.mpenergy=val
           <argument>
             <kind>1</kind>
             <string>//if val&lt;500 then {if global.expg&gt;=cost then {global.expg-=cost; val+=1}}
-if val==100 then {if global.expg&gt;=cost then {global.expg-=cost; val=200}}
-if val==200 then {if global.expg&gt;=cost then {global.expg-=cost; val=350}}
-if val==350 then {if global.expg&gt;=cost then {global.expg-=cost; val=500}}
-if val==500 then {if global.expg&gt;=cost then {global.expg-=cost; val=750}}
+if val==100 then {if global.expg&gt;=cost then {global.expg-=cost; val+=100}}
+if val==200 then {if global.expg&gt;=cost then {global.expg-=cost; val+=150}}
+if val==350 then {if global.expg&gt;=cost then {global.expg-=cost; val+=200}}
+if val==550 then {if global.expg&gt;=cost then {global.expg-=cost; val+=250}}
 global.mpenergy=val
 </string>
           </argument>
