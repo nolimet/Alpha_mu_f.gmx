@@ -135,6 +135,7 @@
           <object>objects\obj_enemy_parent</object>
         </objects>
         <object>objects\obj_enemy_mu</object>
+        <object>objects\obj_base_shooting_enemy</object>
         <object>objects\obj_enemy_lambda</object>
         <object>objects\obj_enemy_wasp</object>
         <object>objects\obj_enemy_spawner</object>
