@@ -183,6 +183,7 @@
         <object>objects\obj_play</object>
         <object>objects\obj_Upgrade</object>
         <object>objects\obj_above_game</object>
+        <object>objects\object79</object>
         <object>objects\obj_side_mode</object>
         <object>objects\obj_options</object>
         <object>objects\obj_back</object>
