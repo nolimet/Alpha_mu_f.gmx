@@ -128,6 +128,7 @@
   <option_ios_orient_portrait>-1</option_ios_orient_portrait>
   <option_ios_orient_portrait_upside_down>-1</option_ios_orient_portrait_upside_down>
   <option_ios_provisioning>&lt; Press refresh to fetch provisioning list from Mac&gt;</option_ios_provisioning>
+  <option_ios_set_device_id></option_ios_set_device_id>
   <option_ios_splash_png>Configs\Default\ios\splash.png</option_ios_splash_png>
   <option_ios_texture_page>1024</option_ios_texture_page>
   <option_ios_use_test_ads>0</option_ios_use_test_ads>
@@ -190,17 +191,17 @@
   <option_textureGroup0_nocropping>-1</option_textureGroup0_nocropping>
   <option_textureGroup0_parent>&lt;none&gt;</option_textureGroup0_parent>
   <option_textureGroup0_scaled>0</option_textureGroup0_scaled>
-  <option_textureGroup0_targets>$7fffffffffffffff</option_textureGroup0_targets>
+  <option_textureGroup0_targets>9223372036854775807</option_textureGroup0_targets>
   <option_textureGroup1_border>8</option_textureGroup1_border>
   <option_textureGroup1_nocropping>-1</option_textureGroup1_nocropping>
   <option_textureGroup1_parent>&lt;none&gt;</option_textureGroup1_parent>
   <option_textureGroup1_scaled>0</option_textureGroup1_scaled>
-  <option_textureGroup1_targets>$7fffffffffffffff</option_textureGroup1_targets>
+  <option_textureGroup1_targets>9223372036854775807</option_textureGroup1_targets>
   <option_textureGroup2_border>2</option_textureGroup2_border>
   <option_textureGroup2_nocropping>0</option_textureGroup2_nocropping>
   <option_textureGroup2_parent>&lt;none&gt;</option_textureGroup2_parent>
   <option_textureGroup2_scaled>0</option_textureGroup2_scaled>
-  <option_textureGroup2_targets>$7fffffffffffffff</option_textureGroup2_targets>
+  <option_textureGroup2_targets>9223372036854775807</option_textureGroup2_targets>
   <option_textureGroup_count>3</option_textureGroup_count>
   <option_textureGroups0>Default</option_textureGroups0>
   <option_textureGroups1>TexPage1</option_textureGroups1>
@@ -282,6 +283,7 @@
   <option_windows_release_version>0</option_windows_release_version>
   <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
   <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>
+  <option_windows_save_location>0</option_windows_save_location>
   <option_windows_splash_screen>Configs\Default\windows\splash.png</option_windows_splash_screen>
   <option_windows_steam_app_id>0</option_windows_steam_app_id>
   <option_windows_texture_page>8192</option_windows_texture_page>

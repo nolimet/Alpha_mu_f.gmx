@@ -42,6 +42,7 @@ ticks=0
 tickm=100
 tick=0
 global.scatcantfire=0
+global.shield_alive=0
 canfireZpm=600
 canfireZp=canfireZpm
 //image_speed=0
@@ -78,7 +79,7 @@ if keyboard_check(vk_space)==1 then {if canfirew1&gt;=((2.5-global.firerate)+1) 
 if keyboard_check(ord('S'))==1 then {if global.scatcantfire==0 {if global.scatlas=1 then {if canfirew2&gt;=((0.8-global.firerate)+1) then {instance_create(x,y,obj_scater_laser);canfirew2=0}}}}
 if keyboard_check(ord('G'))==1 then {if global.weapon_granade==1 then {if global.penergy&gt;=20 then {if canfirew3&gt;=((19-global.firerate)+1) then {instance_create(x,y,obj_frag_granade);canfirew3=0;global.penergy-=20}}}}
 if keyboard_check(ord('Z'))==1 then {if global.a_zeropoint_alive==0 then {if global.a_zeropoint=1 then { if canfireZp=canfireZpm then { if global.penergy&gt;=90 then {instance_create(x+20,y,obj_a_zeropoint_Start); canfireZp=0; global.penergy-=90}}}}}
-if keyboard_check(vk_shift)==1 then {if global.shield_alive==0 then { if global.penergy&gt;=50 then {instance_create(x,y,obj_shield); global.shield_alive=1}}}
+if keyboard_check(vk_shift)==1 then {if global.shield_alive==0 then { if global.penergy&gt;=50 then {instance_create(x,y,obj_shield)}}}
  
 //Draw updates
 drawhp=((100/global.maxphp)*global.php)

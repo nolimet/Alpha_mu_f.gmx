@@ -158,6 +158,7 @@
       </objects>
       <object>objects\obj_ranValue_gen</object>
       <object>objects\obj_partical_test</object>
+      <object>objects\object80</object>
     </objects>
     <objects name="Bounce game">
       <objects name="balls">

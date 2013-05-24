@@ -56,9 +56,9 @@ for(count = 0; count&lt;spawns; count+=1)
 instance_create(x,y,obj_frag_frag);
 }
 timer +=1
-if timer==50 then count=0
+//if timer==50 then count=0
 //if count&gt;=spawns 
-if timer == 52 then instance_destroy()
+if timer == 20 then instance_destroy()
 </string>
           </argument>
         </arguments>
