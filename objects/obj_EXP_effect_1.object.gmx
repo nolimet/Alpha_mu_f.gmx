@@ -28,6 +28,15 @@
             <string>linewidth = 4
 mode = 1
 radius = 20
+i = 0;
+b = 0;
+total = 0;
+repeat(7+random(3)){
+    array[i,0] = x-50+random(100);
+    array[i,1] = y-50+random(100);
+    i += 1;
+    total += 1;
+}
 </string>
           </argument>
         </arguments>
@@ -79,8 +88,13 @@ if mode = 2 radius -= 3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>repeat(10){
-    draw_line_width_color(x,y,x-50+random(100),y-50+random(100),linewidth,c_yellow,c_red)
+            <string>repeat(1)
+{
+b = 0;
+repeat(7){
+    draw_line_width_color(x,y,array[b,0],array[b,1],linewidth,c_yellow,c_red)
+    b += 1;
+}
 }
 draw_circle_color(x,y,radius,c_yellow,c_red,0)
 </string>
