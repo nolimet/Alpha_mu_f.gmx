@@ -37,6 +37,7 @@
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_mu_old</sprite>
       <sprite>sprites\spr_enemy_mu</sprite>
+      <sprite>sprites\spr_mu_new</sprite>
       <sprite>sprites\spr_enemy_muon</sprite>
       <sprite>sprites\spr_enemy_lambda</sprite>
       <sprite>sprites\spr_enemy_transport</sprite>
