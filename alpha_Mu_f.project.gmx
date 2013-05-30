@@ -46,6 +46,7 @@
       <sprite>sprites\spr_mu_new</sprite>
       <sprite>sprites\spr_enemy_muon</sprite>
       <sprite>sprites\spr_enemy_lambda</sprite>
+      <sprite>sprites\spr_lambda_new</sprite>
       <sprite>sprites\spr_enemy_transport</sprite>
       <sprite>sprites\spr_enemy_cannon</sprite>
       <sprite>sprites\spr_enemy_wasp</sprite>
