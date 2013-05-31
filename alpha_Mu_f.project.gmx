@@ -48,6 +48,7 @@
       <sprite>sprites\spr_enemy_lambda</sprite>
       <sprite>sprites\spr_lambda_new</sprite>
       <sprite>sprites\spr_enemy_unassigned</sprite>
+      <sprite>sprites\spr_enemy_unassinged2</sprite>
       <sprite>sprites\spr_enemy_transport</sprite>
       <sprite>sprites\spr_enemy_cannon</sprite>
       <sprite>sprites\spr_enemy_wasp</sprite>
@@ -144,8 +145,11 @@
           <object>objects\obj_enemy_parent</object>
         </objects>
         <object>objects\obj_enemy_mu</object>
+        <object>objects\obj_enemy_muon</object>
         <object>objects\obj_base_shooting_enemy</object>
         <object>objects\obj_enemy_lambda</object>
+        <object>objects\obj_enemy_lambda2</object>
+        <object>objects\obj_enemy_lambda3</object>
         <object>objects\obj_enemy_wasp</object>
         <object>objects\obj_enemy_spawner</object>
       </objects>
