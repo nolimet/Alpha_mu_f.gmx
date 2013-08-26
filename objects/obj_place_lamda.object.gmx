@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>create=obj_enemy_lambda
+            <string>ranval=random(3)
+
+if(ranval&lt;1){create=obj_enemy_lambda}
+else if(ranval&gt;=1 &amp;&amp; ranval&lt;2){create=obj_enemy_lambda2}
+else if(ranval&gt;=2 &amp;&amp; ranval&lt;3){create=obj_enemy_lambda3}
+else{instance_destroy()}
 time=0
 rantime=random(5)
 </string>

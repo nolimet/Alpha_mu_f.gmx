@@ -34,7 +34,7 @@ ehp=ehpmax
 drawhp=0
 roomx1=room_width
 roomy1=room_height
-create=obj_enemy_lambda
+create=obj_place_lamda
 hspeed=-espeed
 </string>
           </argument>
