@@ -61,6 +61,8 @@
         <sprite>sprites\spr_boss1_gun1</sprite>
         <sprite>sprites\spr_boss1_gun2</sprite>
         <sprite>sprites\spr_editsprite_DELETE_THIS</sprite>
+        <sprite>sprites\spr_laser_boss</sprite>
+        <sprite>sprites\spr_bullet_boss</sprite>
       </sprites>
     </sprites>
     <sprites name="buttons">
@@ -143,6 +145,7 @@
         </objects>
         <objects name="Parents">
           <object>objects\obj_enemy_parent</object>
+          <object>objects\obj_enemy_proj_parent</object>
         </objects>
         <object>objects\obj_enemy_mu</object>
         <object>objects\obj_enemy_muon</object>
@@ -152,6 +155,10 @@
         <object>objects\obj_enemy_lambda3</object>
         <object>objects\obj_enemy_wasp</object>
         <object>objects\obj_enemy_spawner</object>
+        <objects name="Boss">
+          <object>objects\obj_boss1_body</object>
+          <object>objects\obj_laser_boss</object>
+        </objects>
       </objects>
       <objects name="Place enemy">
         <object>objects\obj_place_mu</object>
