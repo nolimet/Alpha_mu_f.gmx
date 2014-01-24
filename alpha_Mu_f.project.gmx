@@ -48,7 +48,7 @@
       <sprite>sprites\spr_enemy_lambda</sprite>
       <sprite>sprites\spr_lambda_new</sprite>
       <sprite>sprites\spr_enemy_unassigned</sprite>
-      <sprite>sprites\spr_enemy_unassinged2</sprite>
+      <sprite>sprites\spr_enemy_unassigned2</sprite>
       <sprite>sprites\spr_enemy_transport</sprite>
       <sprite>sprites\spr_enemy_cannon</sprite>
       <sprite>sprites\spr_enemy_wasp</sprite>
@@ -85,6 +85,7 @@
       <sprite>sprites\spr_breakblock</sprite>
       <sprite>sprites\spr_minigame</sprite>
     </sprites>
+    <sprite>sprites\spr_enemy_bullets</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Moon</background>
