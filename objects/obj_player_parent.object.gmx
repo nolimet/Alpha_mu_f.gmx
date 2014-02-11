@@ -75,11 +75,11 @@ commandcooldown=0
 hspeed = (keyboard_check(vk_right)-keyboard_check(vk_left))*6; vspeed = (keyboard_check(vk_down)-keyboard_check(vk_up))*6;
 
 //Weapons
-if keyboard_check(vk_space)==1 then {if canfirew1&gt;=((2.5-global.firerate)+1) then {instance_create(x,y,obj_lasers);canfirew1=0}}
-if keyboard_check(ord('S'))==1 then {if global.scatcantfire==0 {if global.scatlas=1 then {if canfirew2&gt;=((0.8-global.firerate)+1) then {instance_create(x,y,obj_scater_laser);canfirew2=0}}}}
-if keyboard_check(ord('G'))==1 then {if global.weapon_granade==1 then {if global.penergy&gt;=20 then {if canfirew3&gt;=((19-global.firerate)+1) then {instance_create(x,y,obj_frag_granade);canfirew3=0;global.penergy-=20}}}}
-if keyboard_check(ord('Z'))==1 then {if global.a_zeropoint_alive==0 then {if global.a_zeropoint=1 then { if canfireZp=canfireZpm then { if global.penergy&gt;=90 then {instance_create(x+20,y,obj_a_zeropoint_Start); canfireZp=0; global.penergy-=90}}}}}
-if keyboard_check(vk_shift)==1 then {if global.shield_alive==0 then { if global.penergy&gt;=50 then {instance_create(x,y,obj_shield)}}}
+if (keyboard_check(vk_space)==1 &amp;&amp; canfirew1&gt;=((2.5-global.firerate)+1)) then {instance_create(x,y,obj_lasers);canfirew1=0}
+if (keyboard_check(ord('S'))==1 &amp;&amp; global.scatcantfire==0 &amp;&amp; global.scatlas=1 &amp;&amp; canfirew2&gt;=((0.8-global.firerate)+1)) then {instance_create(x,y,obj_scater_laser);canfirew2=0}
+if (keyboard_check(ord('G'))==1 &amp;&amp; global.weapon_granade==1 &amp;&amp; global.penergy&gt;=20 &amp;&amp; canfirew3&gt;=((19-global.firerate)+1)) then {instance_create(x,y,obj_frag_granade);canfirew3=0;global.penergy-=20}
+if (keyboard_check(ord('Z'))==1 &amp;&amp; global.a_zeropoint_alive==0 &amp;&amp; global.a_zeropoint=1 &amp;&amp; canfireZp=canfireZpm &amp;&amp; global.penergy&gt;=90) then {instance_create(x+20,y,obj_a_zeropoint_Start); canfireZp=0; global.penergy-=90}
+if (keyboard_check(vk_shift)==1 &amp;&amp; global.shield_alive==0 &amp;&amp; global.penergy&gt;=50) then {instance_create(x,y,obj_shield)}
  
 //Draw updates
 drawhp=((100/global.maxphp)*global.php)
