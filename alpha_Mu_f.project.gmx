@@ -54,6 +54,7 @@
       <sprite>sprites\spr_enemy_wasp</sprite>
       <sprite>sprites\spr_what</sprite>
       <sprite>sprites\spr_raptorjetpack</sprite>
+      <sprite>sprites\spr_heli1</sprite>
       <sprites name="Boss level 3">
         <sprite>sprites\spr_boss1_body</sprite>
         <sprite>sprites\spr_boss1_arm1</sprite>
